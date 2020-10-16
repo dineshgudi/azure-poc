@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "func start",
-    "test": "cd test && npm run test && cd .."
+    "test": "npm run test && cd .."
   },
   "dependencies": {},
   "devDependencies": {}
