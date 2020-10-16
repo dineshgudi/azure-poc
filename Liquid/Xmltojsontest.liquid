@@ -1,0 +1,13 @@
+{%- assign salesAreas = content.DEBMAS_D365.IDOC.E1KNA1M.E1KNVVM | Split: ', ' -%}
+
+{
+   "salesAreas" : [
+      {%- for salesArea in salesAreas -%}
+         {%- if forloop.Last == true -%}
+         "{{salesArea}}"
+         {%- else -%}
+         "{{salesArea}}",
+         {%- endif -%}
+      {%- endfor -%}
+   ]
+}

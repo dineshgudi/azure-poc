@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\test",
+    "\\test\\e2e",
+    "\\test\\unit"
   ],
-  "SelectedNode": "\\Liquid",
+  "SelectedNode": "\\test",
   "PreviewInSolutionExplorer": false
 }
