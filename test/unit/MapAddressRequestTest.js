@@ -15,7 +15,7 @@ describe.only('Account', () => {
     beforeEach((done) => {
         done();
     });
-   let accountAddressRequest = `{
+   let accountAddressRequest = {
    "ADRMAS03":{
     "IDOC":{
        "EDI_DC40":{
@@ -171,7 +171,7 @@ describe.only('Account', () => {
        ]
     }
  }
-}`;
+};
 
 
     describe('MapAccountAddressRequestHelper.js', () => {
