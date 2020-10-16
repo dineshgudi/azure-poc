@@ -16,6 +16,7 @@ describe.only('Account', () => {
         done();
     });
    let accountAddressRequest = `{
+   "body":{
    "ADRMAS03":{
     "IDOC":{
        "EDI_DC40":{
@@ -170,7 +171,7 @@ describe.only('Account', () => {
           }
        ]
     }
- }
+ }}
 }`;
 
 const request = JSON.parse(accountAddressRequest);
