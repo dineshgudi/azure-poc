@@ -178,18 +178,12 @@ const request = JSON.parse(accountAddressRequest);
 
     describe('MapAccountAddressRequestHelper.js', () => {
         it('#accountAddressRequestMapper should generate the Account Address JSON accurately', async() => {
-            let convertedRequest = httpFunction(context, request);
+            await httpFunction(context, request);
             // convertedRequest = JSON.parse(convertedRequest);
-            let response;
-            console.log(convertedRequest)
-            convertedRequest.then(function(result) {
-                console.log("response: ", result);
-                response = result;
-              });
-            
-            console.log(response);
-            assert.isNotNull(response);
-            assert.equal(response.body.BillingPostalCode, '75063');   
+
+            console.log(context.response.body);
+            assert.isNotNull(context.res.body);
+            assert.equal(context.res.body.BillingPostalCode, '75063');   
                 
         });
     });
