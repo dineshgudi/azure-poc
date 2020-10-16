@@ -2,6 +2,7 @@ module.exports = async function (context, request) {
     context.log('JavaScript HTTP trigger function processed a requestuest.');
     request = request.body;
     var telephone = '';
+    var country = request.ADRMAS03.IDOC.E1ADRMAS.E1BPAD1VL.COUNTRY;
     var region = request.ADRMAS03.IDOC.E1ADRMAS.E1BPAD1VL.REGION;
     var obj_id = request.ADRMAS03.IDOC.E1ADRMAS.OBJ_ID;
     var name = request.ADRMAS03.IDOC.E1ADRMAS.E1BPAD1VL.NAME;
