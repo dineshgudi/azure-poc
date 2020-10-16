@@ -35,6 +35,7 @@ module.exports = async function (context, request) {
     requestObj.BillingStreet = name_2+name_3+c_o_name+str_suppl1+house_no+street+str_suppl3+city2;
     requestObj.BillingCity = city;
     requestObj.BillingPostalCode = postl_cod1;
+    console.log(requestObj.BillingPostalCode);
     requestObj.BillingCountry = country;
     requestObj.BillingState = region;
     requestObj.Language__c = langu_iso;
