@@ -1,5 +1,6 @@
 module.exports = async function (context, request) {
     context.log('JavaScript HTTP trigger function processed a requestuest.');
+    console.log(request);
     request = request.body;
     var telephone = '';
     var country = request.ADRMAS03.IDOC.E1ADRMAS.E1BPAD1VL.COUNTRY;
