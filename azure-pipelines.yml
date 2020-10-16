@@ -15,7 +15,7 @@ variables:
   functionAppName: 'MapAccount'
  
   # Environment name
-  environmentName: ''
+  environmentName: 'Nodejs'
  
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
