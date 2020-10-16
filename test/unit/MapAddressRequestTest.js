@@ -181,7 +181,7 @@ const request = JSON.parse(accountAddressRequest);
             await httpFunction(context, request);
             // convertedRequest = JSON.parse(convertedRequest);
 
-            console.log(context.response.body);
+            console.log(context.res.body);
             assert.isNotNull(context.res.body);
             assert.equal(context.res.body.BillingPostalCode, '75063');   
                 
