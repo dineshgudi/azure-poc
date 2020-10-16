@@ -181,6 +181,7 @@ const request = JSON.parse(accountAddressRequest);
             let convertedRequest = httpFunction(context, request);
             // convertedRequest = JSON.parse(convertedRequest);
             let response;
+            console.log(convertedRequest)
             convertedRequest.then(function(result) {
                 console.log("response: ", result);
                 response = result;
