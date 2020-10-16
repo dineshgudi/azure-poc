@@ -15,7 +15,7 @@ describe.only('Account', () => {
     beforeEach((done) => {
         done();
     });
-   let accountAddressRequest = {
+   const request = {
    "ADRMAS03":{
     "IDOC":{
        "EDI_DC40":{
@@ -176,7 +176,7 @@ describe.only('Account', () => {
 
     describe('MapAccountAddressRequestHelper.js', () => {
         it('#accountAddressRequestMapper should generate the Account Address JSON accurately', async() => {
-            let convertedRequest = httpFunction(context, JSON.parse(accountAddressRequest));
+            let convertedRequest = httpFunction(context, request);
             // convertedRequest = JSON.parse(convertedRequest);
             
             assert.isNotNull(convertedRequest);
