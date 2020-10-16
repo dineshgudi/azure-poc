@@ -15,7 +15,7 @@ describe.only('Account', () => {
     beforeEach((done) => {
         done();
     });
-   const request = {
+   let accountAddressRequest = `{
    "ADRMAS03":{
     "IDOC":{
        "EDI_DC40":{
@@ -171,8 +171,9 @@ describe.only('Account', () => {
        ]
     }
  }
-};
+}`;
 
+const request = JSON.parse(accountAddressRequest);
 
     describe('MapAccountAddressRequestHelper.js', () => {
         it('#accountAddressRequestMapper should generate the Account Address JSON accurately', async() => {
