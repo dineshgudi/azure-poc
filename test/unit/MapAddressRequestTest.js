@@ -182,7 +182,7 @@ const request = JSON.parse(accountAddressRequest);
             // convertedRequest = JSON.parse(convertedRequest);
             
             assert.isNotNull(convertedRequest);
-            assert.equal(convertedRequest.BillingPostalCode, '75063');   
+            assert.equal(convertedRequest.body.BillingPostalCode, '75063');   
                 
         });
     });
