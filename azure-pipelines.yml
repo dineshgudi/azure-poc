@@ -47,7 +47,7 @@ stages:
         npm run build --if-present
         cd test && npm install
         npm run test --if-present
-        az deployment group create --name mapaccount --resource-group mapaccount --template-file apimanagementarm.json --parameters apimanagementarm.parameters.json
+        az account list
       displayName: 'Prepare binaries'
       
     - task: ArchiveFiles@2
