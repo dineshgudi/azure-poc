@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "publisherEmail": {
+            "value": "gdinesh.8055@gmail.com"
+        },
+        "publisherName": {
+            "value": "Dinesh Gudi"
+        },
+        "apiPolicy": {
+            "value": "./SmxExample.xml"
+        },
+        "operationPolicy": {
+            "value": "./GetExample.xml"
+        },
+        // "productPolicy": {
+        //     "value": "./ProductPolicy.xml"
+        // },
+        "location": {
+            "value":"East US"
+        }
+        // "subscriptionId": {
+        //     "value":"229848dd-2e71-4f5f-9959-6113cef5f3e1"
+        // }
+    }
+}
