@@ -56,7 +56,7 @@
     }
   },
   "variables": {
-    "apiManagementServiceName": "[concat('test', uniqueString(resourceGroup().id))]"
+    "apiManagementServiceName": "['smax']"
   },
   "resources": [
     {
@@ -140,7 +140,7 @@
                     "[concat('Microsoft.ApiManagement/service/', variables('apiManagementServiceName'), '/apis/exampleApi/operations/exampleOperationsGET')]"
                   ],
                   "properties": {
-                    "policyContent": "<policies><inbound><rate-limit calls='5' renewal-period='60' /><quota calls='100' renewal-period='604800' /><base /></inbound><backend><base /></backend><outbound><base /></outbound><on-error><base /></on-error></policies>"
+                    "policyContent": "<policies><inbound><rate-limit calls='5' renewal-period='60' /><base /></inbound><backend><base /></backend><outbound><base /></outbound><on-error><base /></on-error></policies>"
                   }
                 }
               ]
